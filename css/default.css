@@ -14,3 +14,27 @@ body > .grid {
 body#loginpage > .grid > .column {
     max-width: 450px;
 }
+
+.full.height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.full.height > .filler {
+    flex: 1;
+}
+
+.filler > * {
+    height: 100%;
+}
+
+.top.bar {
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(34, 36, 38, .15);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.04);
+}
+
+#students .fields {
+    margin-bottom: 0;
+}
