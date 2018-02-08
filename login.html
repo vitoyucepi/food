@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Пожалуйста войдите</title>
     <meta charset="UTF-8">
-    <script src="3rdparty/jquery/jquery-3.1.1.min.js" ></script>
+    <script src="3rdparty/jquery/jquery-3.1.1.min.js"></script>
+    <script src="3rdparty/semantic/semantic.min.js"></script>
+    <link rel="stylesheet" href="3rdparty/semantic/semantic.min.css">
+    <link rel="stylesheet" href="css/default.css">
 </head>
-<body>
-<div class="ui container">
-
+<body id="loginpage">
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <h2 class="ui header">Войдите в ваш аккаунт</h2>
+        <form class="ui large form" id="login" action="main.html" method="post">
+            <div class="ui segment">
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i>
+                        <input type="text" name="username" placeholder="Ычаев" value="Ычаев" readonly required>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="key icon"></i>
+                        <input type="password" name="password" placeholder="Пароль" value="Der Parol" readonly required>
+                    </div>
+                </div>
+                <input type="submit" class="ui fluid large black submit button" value="Войти">
+            </div>
+        </form>
+    </div>
 </div>
 </body>
 </html>

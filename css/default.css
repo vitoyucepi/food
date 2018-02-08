@@ -1,0 +1,16 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body#loginpage {
+    background-color: #dadada;
+}
+
+body > .grid {
+    height: 100%;
+}
+
+body#loginpage > .grid > .column {
+    max-width: 450px;
+}
